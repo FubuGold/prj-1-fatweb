@@ -1,0 +1,98 @@
+:root {
+    --primary-color: #d7b66aff;
+    --secondary-color: #f0e5d8;
+    --highlight: #6a3e37ff;
+    --text-color: #272d2dff;
+}
+* {
+    color: var(--text-color);
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    overflow: hidden;
+    text-decoration: none;
+}
+
+#brand-logo {
+    float: left;
+}
+
+#header-brand-name {
+    float: left;
+    font-size: 2rem;
+}
+
+#header-link-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+#header-link-nav li {
+    float: left;
+}
+#header-link-nav a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+#header-link-nav a:hover {
+    background-color: var(--secondary-color);
+}
+#header-link-nav a.active {
+    background-color: var(--highlight);
+    color: var(--secondary-color);
+}
+
+main {
+    background-color: var(--secondary-color);
+}
+
+/* Colort table
+CSS HEX
+--ecru: #d7b66aff; -------- primary
+--almond: #f1e3d3ff; ------ secondary
+--bole: #6a3e37ff; -------- highlight / bar
+--gunmetal: #272d2dff; ---- text
+
+CSS HSL
+--ecru: hsla(42, 58%, 63%, 1);
+--almond: hsla(32, 52%, 89%, 1);
+--bole: hsla(8, 32%, 32%, 1);
+--gunmetal: hsla(180, 7%, 16%, 1);
+
+SCSS HEX
+$ecru: #d7b66aff;
+$almond: #f1e3d3ff;
+$bole: #6a3e37ff;
+$gunmetal: #272d2dff;
+
+SCSS HSL
+$ecru: hsla(42, 58%, 63%, 1);
+$almond: hsla(32, 52%, 89%, 1);
+$bole: hsla(8, 32%, 32%, 1);
+$gunmetal: hsla(180, 7%, 16%, 1);
+
+SCSS RGB
+$ecru: rgba(215, 182, 106, 1);
+$almond: rgba(241, 227, 211, 1);
+$bole: rgba(106, 62, 55, 1);
+$gunmetal: rgba(39, 45, 45, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-right: linear-gradient(90deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-bottom: linear-gradient(180deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-left: linear-gradient(270deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-top-right: linear-gradient(45deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-bottom-right: linear-gradient(135deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-top-left: linear-gradient(225deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-bottom-left: linear-gradient(315deg, #d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+$gradient-radial: radial-gradient(#d7b66aff, #f1e3d3ff, #6a3e37ff, #272d2dff);
+*/

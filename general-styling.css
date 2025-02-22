@@ -1,0 +1,31 @@
+body {
+    background-color: #EBE3D2;
+    font-family: "Montserrat";
+    padding: 0px;
+    margin: 0px;
+}
+
+#header-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: inherit;
+
+    background-color: #CCBFA3;
+    color: #412F26;
+    text-align: center;
+    padding: 40px 250px;
+    gap: 30px;
+}
+
+.no-margin-h1 {
+    margin: 0px;
+}
+
+.no-margin-h2 {
+    margin: 0px;
+}
+
+.no-margin-p {
+    margin: 0px;
+}

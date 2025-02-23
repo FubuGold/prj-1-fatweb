@@ -7,14 +7,14 @@ pls we need points
 
 ```html
 <div id="header-placeholder">
-    <script src="layout/header.js"></script>
+    <script src="/assets/js/header.js"></script>
 </div>
 ```
 
 Similarly, you can replace the `<footer>` tag with the following code to use the styled footer:
 
 ```html
-<div id="header-placeholder">
-    <script src="layout/footer.js"></script>
+<div id="footer-placeholder">
+    <script src="/assets/js/footer.js"></script>
 </div>
 ```

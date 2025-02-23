@@ -5,7 +5,7 @@ body {
     margin: 0px;
 }
 
-#header-box {
+#header-box-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -18,14 +18,26 @@ body {
     gap: 30px;
 }
 
-.no-margin-h1 {
+#header-box-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: inherit;
+
+    background-color: inherit;
+    color: #412F26;
+    text-align: center;
+    padding: 40px 100px;
+    gap: 30px;
+}
+
+.no-margin {
     margin: 0px;
 }
 
-.no-margin-h2 {
-    margin: 0px;
-}
-
-.no-margin-p {
-    margin: 0px;
+.circular-image {
+    width: 150px;  /* Adjust size as needed */
+    height: 150px; /* Ensure width & height are the same */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular frame */
 }

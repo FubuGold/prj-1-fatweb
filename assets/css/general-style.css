@@ -27,19 +27,11 @@ body {
     background-color: inherit;
     color: #412F26;
     text-align: center;
-    padding: 40px 250px;
+    padding: 40px 100px;
     gap: 30px;
 }
 
-.no-margin-h1 {
-    margin: 0px;
-}
-
-.no-margin-h2 {
-    margin: 0px;
-}
-
-.no-margin-p {
+.no-margin {
     margin: 0px;
 }
 

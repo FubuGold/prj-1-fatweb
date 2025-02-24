@@ -1,20 +1,22 @@
+/* page styling */
 body {
-    background-color: #EBE3D2;
+    background-color: var(--background);
     font-family: "Montserrat";
     padding: 0px;
     margin: 0px;
 }
 
+/* header styling */
 #header-box-1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
     font-family: inherit;
 
-    background-color: #CCBFA3;
-    color: #412F26;
+    background-color: var(--highlight-background);
+    color: var(--dark-brown);
     text-align: center;
-    padding: 40px 250px;
+    padding: 75px 250px;
     gap: 30px;
 }
 
@@ -25,19 +27,60 @@ body {
     font-family: inherit;
 
     background-color: inherit;
-    color: #412F26;
+    color: var(--dark-brown);
     text-align: center;
     padding: 40px 100px;
     gap: 30px;
 }
 
+/* cancel defaut margin setting for better spacing */
 .no-margin {
     margin: 0px;
 }
 
+/* for cropping circular image */
 .circular-image {
-    width: 150px;  /* Adjust size as needed */
-    height: 150px; /* Ensure width & height are the same */
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the image fills the circular frame */
+    object-fit: cover;
 }
+
+/* adjust height dynamically */
+.square {
+    flex: 1;
+    aspect-ratio: 3 / 2;
+    position: relative; /* Needed for absolute positioning */
+    overflow: hidden;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65); /* Semi-transparent overlay */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.square:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the div */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+  
+  

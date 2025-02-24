@@ -10,6 +10,7 @@ body {
 #header-box-1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     font-family: inherit;
 
@@ -25,6 +26,7 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: inherit;
+    margin-bottom: 50px;
 
     background-color: inherit;
     color: var(--dark-brown);
@@ -50,8 +52,21 @@ body {
 .square {
     flex: 1;
     aspect-ratio: 3 / 2;
-    position: relative; /* Needed for absolute positioning */
+    box-sizing: border-box; /* Includes padding inside the width */
+    width: 100%;
+    padding: 0px 70px;
+    gap: 40px;
+      
+    position: relative;
     overflow: hidden;
+    background-color: var(--light-brown);
+    color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
   
 .overlay {
@@ -81,6 +96,29 @@ body {
     top: 0;
     left: 0;
 }
-  
-  
-  
+
+/* button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--earth-green);
+    color: var(--background);
+    width: 120px;
+
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s ease-in-out, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: var(--background);
+    color: var(--earth-green);
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: 800;
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+}

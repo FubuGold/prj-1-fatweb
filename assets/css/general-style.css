@@ -1,9 +1,16 @@
 /* page styling */
+main {
+    flex: 1;
+}
+
 body {
     background-color: var(--background);
     font-family: "Montserrat";
     padding: 0px;
     margin: 0px;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* header styling */

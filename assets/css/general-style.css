@@ -35,6 +35,8 @@ body {
     gap: 30px;
 }
 
+
+
 /* cancel defaut margin setting for better spacing */
 .no-margin {
     margin: 0px;
@@ -61,6 +63,24 @@ body {
     overflow: hidden;
     background-color: var(--light-brown);
     color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.square-alt {
+    flex: 1;
+    aspect-ratio: 3 / 2;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0px 70px;
+    gap: 40px;
+      
+    background-color: var(--highlight-background);
+    color: var(--dark-brown);
 
     display: flex;
     flex-direction: column;
@@ -97,6 +117,38 @@ body {
     left: 0;
 }
 
+/* Member card & overlay */
+.member-card {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.member-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-brown);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Hidden by default */
+    transform: translateX(-100%); /* Start position (above the viewport) */
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.member-card:hover .member-overlay {
+    opacity: 0.95; /* Show overlay on hover */
+    transform: translateX(0);
+}
+
 /* button */
 .cta-button {
     display: inline-block;
@@ -121,4 +173,13 @@ body {
 
 .cta-button:active {
     transform: scale(0.98);
+}
+
+/* For SM icons */
+.custom {
+    transition: transform 0.2s ease-in-out;
+}
+
+.custom:hover {
+    transform: scale(1.2);
 }

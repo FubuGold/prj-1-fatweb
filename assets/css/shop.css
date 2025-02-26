@@ -1,12 +1,38 @@
 #shop-title {
     text-align: center;
-    padding: 2rem auto;
+    padding: 5dvh 0;
+    font-size: 3rem;
 }
 
 #product-section {
     display: grid;
-    grid-template-columns: repeat(3, 20%);
+    grid-template-columns: repeat(3, 17%);
     margin: auto;
     justify-content: center;
-    column-gap: 3rem;
+    column-gap: 5rem;
+    row-gap: 6rem;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content inside */
+    justify-content: flex-start;
+}
+
+.product-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+
+.product-name {
+    font-weight: 800;
+    font-size: x-large;
+    margin: 0;
+    padding: 1rem;
+}
+
+.product-description {
+    flex-grow: 1;
+    margin: 0;    
 }

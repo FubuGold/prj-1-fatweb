@@ -1,0 +1,12 @@
+#shop-title {
+    text-align: center;
+    padding: 2rem auto;
+}
+
+#product-section {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    margin: auto;
+    justify-content: center;
+    column-gap: 3rem;
+}

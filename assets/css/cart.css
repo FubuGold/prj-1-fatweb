@@ -1,10 +1,12 @@
 .title {
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .subtitle {
-    margin-left: 80px;
+    margin-left: 50px;
+    margin-top: 0px;
 }
 
 .remo {
@@ -25,7 +27,7 @@
 
 .shopping-cart {
     margin-left: 50px;
-    width: 1000px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
@@ -35,6 +37,7 @@
 
 .price {
     margin-left: 20px;
+    min-width: 50px;
 }
 
 .item {
@@ -51,7 +54,6 @@
 
 .checkout-btn {
     background-color: #414833;
-    
     margin-top: 10px;
     width: 120px;
     height: 50px;
@@ -61,7 +63,7 @@
     margin-bottom: 20px;
     border-radius: 6px;
     color: #FFFFFF;
-    align-self: right;
+    align-self: center;
 }
 
 .name {

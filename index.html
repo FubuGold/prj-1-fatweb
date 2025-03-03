@@ -16,6 +16,29 @@
         <script src="/assets/js/header.js"></script>
     </div>
     
+    <audio id="bg-music" autoplay loop>
+        <source src="/assets/audio/The Coconut Song - (Da Coconut Nut).mp3" type="audio/mpeg">
+    </audio>
+      
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var audio = document.getElementById("bg-music");
+            audio.volume = 0.15;
+
+            var savedTime = sessionStorage.getItem("bg-music-time");
+            if (savedTime) {
+                audio.currentTime = savedTime;
+            }
+      
+            // Save progress before page unload
+            window.addEventListener("beforeunload", function () {
+                sessionStorage.setItem("bg-music-time", audio.currentTime);
+                sessionStorage.setItem("bg-music-volume", audio.volume);
+            });
+        });
+    </script>
+      
+    
     <!-- Welcome -->
     <div id="header-box-1">
         <h1 style="font-weight: 900; font-size: 50px;" class="no-margin">WELCOME TO THE FAT STORE!</h1>

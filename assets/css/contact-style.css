@@ -6,22 +6,35 @@
   margin-top: 50px;
   margin-bottom: 50px;
   background-color: white;
+  color: var(--dark-brown);
   place-items: center;
 }
 
 #image-edit-zalo {
-  border-radius: 50%; 
+  border-radius: 21%; 
   width: 100px; 
   height: 100px; 
   margin-bottom: 10px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s;
+}
+
+#image-edit-zalo:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }
 
 #image-edit-facebook {
-  border-radius: 50%; 
+  border-radius: 21%; 
   width: 100px;
   height: 100px;
   text-align: left; 
   margin-bottom: 10px;
   cursor: pointer; 
   margin-left: 10%;
+  transition: background-color 0.2s ease-in-out, transform 0.2s;
+}
+
+#image-edit-facebook:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transform: scale(1.03);
 }

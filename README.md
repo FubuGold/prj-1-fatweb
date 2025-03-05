@@ -7,7 +7,7 @@ pls we need points
 
 ```html
 <div id="header-placeholder">
-    <script src="/assets/js/header.js"></script>
+    <script src="./assets/js/header.js"></script>
 </div>
 ```
 
@@ -15,6 +15,6 @@ Similarly, you can replace the `<footer>` tag with the following code to use the
 
 ```html
 <div id="footer-placeholder">
-    <script src="/assets/js/footer.js"></script>
+    <script src="./assets/js/footer.js"></script>
 </div>
 ```

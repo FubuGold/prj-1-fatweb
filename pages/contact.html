@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-	
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<link href="/assets/css/general-style.css" rel="stylesheet">
-	<link href="/assets/css/customer-card.css" rel="stylesheet">
-	<link href="/css/common.css" rel="stylesheet">
-	<link href="/assets/css/contact-style.css" rel="stylesheet">
+	<link href="./assets/css/general-style.css" rel="stylesheet">
+	<link href="./assets/css/customer-card.css" rel="stylesheet">
+	<link href="./css/common.css" rel="stylesheet">
+	<link href="./assets/css/contact-style.css" rel="stylesheet">
 	<title>THE FAT STORE</title>
-	<link rel="icon" type="image/x-icon" href="/assets/image/the fat store logo.png">
+	<link rel="icon" type="image/x-icon" href="./assets/image/the fat store logo.png">
 </head>
 
 <body>
 	<div id="header-placeholder">
-		<script src="/assets/js/header.js"></script>
+		<script src="./assets/js/header.js"></script>
 	</div>
 
 	<audio id="bg-music" autoplay loop>
-        <source src="/assets/audio/The Coconut Song - (Da Coconut Nut).mp3" type="audio/mpeg">
-    </audio>
-      
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var audio = document.getElementById("bg-music");
-            audio.volume = 0.15;
+		<source src="./assets/audio/The Coconut Song - (Da Coconut Nut).mp3" type="audio/mpeg">
+	</audio>
 
-            var savedTime = sessionStorage.getItem("bg-music-time");
-            if (savedTime) {
-                audio.currentTime = savedTime;
-            }
-      
-            // Save progress before page unload
-            window.addEventListener("beforeunload", function () {
-                sessionStorage.setItem("bg-music-time", audio.currentTime);
-                sessionStorage.setItem("bg-music-volume", audio.volume);
-            });
-        });
-    </script>
-	
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var audio = document.getElementById("bg-music");
+			audio.volume = 0.15;
+
+			var savedTime = sessionStorage.getItem("bg-music-time");
+			if (savedTime) {
+				audio.currentTime = savedTime;
+			}
+
+			// Save progress before page unload
+			window.addEventListener("beforeunload", function () {
+				sessionStorage.setItem("bg-music-time", audio.currentTime);
+				sessionStorage.setItem("bg-music-volume", audio.volume);
+			});
+		});
+	</script>
+
 	<main>
 		<div style="display: flex; justify-content: center; align-items: center">
 			<div id="contact-form-container">
 				<h1 style="font-weight: 800">Contact us</h1>
-				
+
 				<form action="#" method="POST">
 					<!-- Left-aligned text with smaller form and border -->
 					<div style="text-align: left; margin-bottom: 10px;">
 						<label for="email">Email:</label><br>
-						<input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 5px; margin-top: 5px;">
+						<input type="email" id="email" name="email" placeholder="Enter your email" required
+							style="width: 100%; padding: 5px; margin-top: 5px;">
 					</div>
-					
+
 					<div style="text-align: left; margin-bottom: 10px;">
 						<label for="phonenum">Phone number:</label><br>
-						<input type="text" id="phonenum" name="phonenum" placeholder="Enter your phone number" required style="width: 100%; padding: 5px; margin-top: 5px;">
+						<input type="text" id="phonenum" name="phonenum" placeholder="Enter your phone number" required
+							style="width: 100%; padding: 5px; margin-top: 5px;">
 					</div>
-					
+
 					<div style="text-align: left; margin-bottom: 10px;">
 						<label for="Your comment">Comment:</label><br>
-						<textarea id="comment" name="comment" placeholder="Enter your comment" rows="9" required style="width: 100%; padding: 5px; margin-top: 5px; resize:none;"></textarea>
+						<textarea id="comment" name="comment" placeholder="Enter your comment" rows="9" required
+							style="width: 100%; padding: 5px; margin-top: 5px; resize:none;"></textarea>
 					</div>
 
 					<div style="text-align: left; margin-bottom: 10px;">
 						<button type="submit" style="padding: 5px 15px;">Submit</button>
 					</div>
-			
+
 				</form>
-		
+
 				<div style="text-align: left;">
 					<p>or contact through:</p>
 				</div>
-		
+
 				<div style="display: flex; justify-content: space-between; width: 70%;">
 					<a href="https://m.me/V%C5%A9%20Thanh%20H%C3%A0i" target="_blank">
-						<img src="/assets/image/social-media/facebook with color.png" alt="Chat with us" id="image-edit-facebook">
+						<img src="./assets/image/social-media/facebook with color.png" alt="Chat with us"
+							id="image-edit-facebook">
 					</a>
-				
+
 					<a href="https://zalo.me/0111222333" target="_blank">
-						<img src="/assets/image/social-media/zalo.png" id="image-edit-zalo">
+						<img src="./assets/image/social-media/zalo.png" id="image-edit-zalo">
 					</a>
 				</div>
-		
+
 			</div>
-		</div>		
-    </main>
-	
-    <div id="footer-placeholder">
-		<script src="/assets/js/footer.js"></script>
+		</div>
+	</main>
+
+	<div id="footer-placeholder">
+		<script src="./assets/js/footer.js"></script>
 	</div>
 </body>
+
 </html>

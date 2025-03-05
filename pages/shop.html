@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    
+
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <link href="/assets/css/common.css" rel="stylesheet">
-    <link href="/assets/css/general-style.css" rel="stylesheet">
-    <link href="/assets/css/customer-card.css" rel="stylesheet">
-    <link href="/assets/css/shop.css" rel="stylesheet">
+    <link href="./assets/css/common.css" rel="stylesheet">
+    <link href="./assets/css/general-style.css" rel="stylesheet">
+    <link href="./assets/css/customer-card.css" rel="stylesheet">
+    <link href="./assets/css/shop.css" rel="stylesheet">
     <title>THE FAT STORE</title>
-    <link rel="icon" type="image/x-icon" href="/assets/image/the fat store logo.png">
+    <link rel="icon" type="image/x-icon" href="./assets/image/the fat store logo.png">
 </head>
 
 <body>
     <div id="header-placeholder">
-        <script src="/assets/js/header.js"></script>
+        <script src="./assets/js/header.js"></script>
     </div>
 
     <audio id="bg-music" autoplay loop>
-        <source src="/assets/audio/The Coconut Song - (Da Coconut Nut).mp3" type="audio/mpeg">
+        <source src="./assets/audio/The Coconut Song - (Da Coconut Nut).mp3" type="audio/mpeg">
     </audio>
-      
+
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             var audio = document.getElementById("bg-music");
@@ -29,7 +29,7 @@
             if (savedTime) {
                 audio.currentTime = savedTime;
             }
-      
+
             // Save progress before page unload
             window.addEventListener("beforeunload", function () {
                 sessionStorage.setItem("bg-music-time", audio.currentTime);
@@ -37,8 +37,8 @@
             });
         });
     </script>
-    
-    
+
+
     <main>
         <h1 id="shop-title">Shop</h1>
         <section id="product-section">
@@ -46,7 +46,7 @@
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/oil.jpg" alt="oil">
+                <img class="product-image" src="./assets/image/product/oil.jpg" alt="oil">
                 <p class="product-name">Oil</p>
                 <p class="product-description">A tasty premium oil suitable for cooking or spreading on bread.</p>
                 <p class="product-price">10$/100ml</p>
@@ -55,7 +55,7 @@
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/butter.jpg" alt="butter">
+                <img class="product-image" src="./assets/image/product/butter.jpg" alt="butter">
                 <p class="product-name">Butter</p>
                 <p class="product-description">A simple bar of butter for direct consumtion.</p>
                 <p class="product-price">10$/bar</p>
@@ -64,7 +64,7 @@
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/nut.jpg" alt="nut">
+                <img class="product-image" src="./assets/image/product/nut.jpg" alt="nut">
                 <p class="product-name">Nut</p>
                 <p class="product-description">Nut for desert. Nut for snacks. Healthy and nutritious.</p>
                 <p class="product-price">10$/100mg</p>
@@ -73,16 +73,17 @@
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/avocado.jpg" alt="avocado">
+                <img class="product-image" src="./assets/image/product/avocado.jpg" alt="avocado">
                 <p class="product-name">Avocado</p>
-                <p class="product-description">A healthy fruit for a healthy mind. Has lots of nutrient for body growth.</p>
+                <p class="product-description">A healthy fruit for a healthy mind. Has lots of nutrient for body growth.
+                </p>
                 <p class="product-price">5$/kg</p>
             </div>
             <div class="product-item" id="cheese">
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/cheese.jpg" alt="avocado">
+                <img class="product-image" src="./assets/image/product/cheese.jpg" alt="avocado">
                 <p class="product-name">Cheese</p>
                 <p class="product-description">Classic cheese wheel for healthy people.</p>
                 <p class="product-price">20$/wheel</p>
@@ -91,16 +92,16 @@
                 <div class="product-hover">
                     <button>Add to card</button>
                 </div>
-                <img class="product-image" src="/assets/image/product/egg.jpg" alt="avocado">
+                <img class="product-image" src="./assets/image/product/egg.jpg" alt="avocado">
                 <p class="product-name">Egg</p>
                 <p class="product-description">For healthy mind with lots of nutrient</p>
                 <p class="product-price">10$/pack</p>
             </div>
         </section>
     </main>
-    
+
     <div id="footer-placeholder">
-        <script src="/assets/js/footer.js"></script>
+        <script src="./assets/js/footer.js"></script>
     </div>
 </body>
 

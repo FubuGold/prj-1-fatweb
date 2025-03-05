@@ -1,32 +1,43 @@
 .title {
-    margin-left: 80px;
+    margin-left: 50px;
     margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 .subtitle {
-    margin-left: 80px;
+    margin-left: 50px;
+    margin-top: 0px;
 }
 
-.plus-btn {
-    transform: scale(0.07);
+.remo {
+    background-color: #414833;
+    color: #FFFFFF;
+    min-width: 35px;
+    height: 35px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 35px;
+    border-radius: 12px;
 }
 
-.minus-btn {
-    transform: scale(0.07);
-}
-
-.remove-btn {
-    transform: scale(0.07);
+.product-image {
+    size: 20px;
+    margin-left: 10px;
 }
 
 .shopping-cart {
-    margin: auto;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 50px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
     border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.price {
+    margin-left: 20px;
+    min-width: 50px;
 }
 
 .item {
@@ -38,12 +49,11 @@
 .total-price {
     text-align: right;
     margin-right: 40px;
+    align-self: right;
 }
 
 .checkout-btn {
     background-color: #414833;
-    margin: auto;
-    margin-left: 90%;
     margin-top: 10px;
     width: 120px;
     height: 50px;
@@ -53,9 +63,11 @@
     margin-bottom: 20px;
     border-radius: 6px;
     color: #FFFFFF;
+    align-self: center;
 }
 
 .name {
     margin: auto;
     height: 50%;
+    margin-left: 20px;
 }

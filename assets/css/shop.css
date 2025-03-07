@@ -1,12 +1,13 @@
-#shop-title {
-    text-align: center;
-    padding: 5dvh 0;
-    font-size: 3rem;
-}
-
 main {
     padding-bottom: 4%;
     color: var(--dark-brown);
+    text-align: center;
+}
+
+#shop-title {
+    text-align: center;
+    padding: 5dvh 0;
+    font-size: 2.5;
 }
 
 #product-section {
@@ -22,7 +23,8 @@ main {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content inside */
+    align-items: center;
+    /* Center the content inside */
     justify-content: flex-start;
     background-color: var(--highlight-background);
     justify-content: center;
@@ -34,6 +36,7 @@ main {
     transition: opacity 0.5s ease;
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -45,16 +48,34 @@ main {
     width: 100%;
 }
 
-.product-hover>button {
-    background-color: whitesmoke;
+.add-cart-button {
+    background-color: var(--background);
     color: var(--light-brown);
-    font-size: 2rem;
+    font-size: 1.75rem;
     border: none;
     padding: 1rem 2rem;
+    margin: 2rem;
 }
 
-.product-hover>button:hover {
-    background-color: rgb(225, 225, 225);
+.nutrient-table,
+.nutrient-table td,
+.nutrient-table th {
+    color: white;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+.nutrient-table td,
+.nutrient-table th {
+    padding: 0.25rem 0.5rem;
+}
+
+.nutrient-table {
+    font-size: 1.25rem;
+}
+
+.add-cart-button:hover {
+    background-color: white;
 }
 
 .product-hover:hover {
@@ -82,4 +103,18 @@ main {
 .product-price {
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+#show-more-button {
+    background-color: var(--dark-brown);
+    color: var(--background);
+    font-size: 2em;
+    border: none;
+    margin: 1.5rem auto 0;
+    padding: 0.75em 2em;
+}
+
+#show-more-button:hover {
+    background-color: var(--highlight-background);
+    color: var(--dark-brown);
 }

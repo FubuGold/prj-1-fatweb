@@ -57,20 +57,20 @@ main {
     margin: 2rem;
 }
 
-.nutrient-table,
-.nutrient-table td,
-.nutrient-table th {
+.nutrition-fact,
+.nutrition-fact td,
+.nutrition-fact th {
     color: white;
     border: 2px solid white;
     border-collapse: collapse;
 }
 
-.nutrient-table td,
-.nutrient-table th {
+.nutrition-fact td,
+.nutrition-fact th {
     padding: 0.25rem 0.5rem;
 }
 
-.nutrient-table {
+.nutrition-fact {
     font-size: 1.25rem;
 }
 
